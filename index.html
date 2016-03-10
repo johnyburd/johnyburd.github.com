@@ -3,22 +3,58 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathan Buchanan</title>
+    <title>Free Pizza</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:200' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+<style type="text/css">
+    #sidebar ul { background: #eee; padding: 10px; }
+    li { margin: 0 0 0 20px; }
+    #sidebar { width: 190px; float: right; }
+    
+    </style>
+
+
+    <script type="text/javascript">
+        $(function() {
+        var offset = $("#sidebar").offset();
+        var topPadding = 15;
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top) {
+        $("#sidebar").stop().animate({
+        marginTop: $(window).scrollTop() - offset.top + topPadding
+        });
+        } else {
+        $("#sidebar").stop().animate({
+        marginTop: 0
+        });
+        };
+        });
+        });
+    </script>
+
   </head>
   <body>
 
+<div id="sidebar">
+				
+                <ul>
+                    <li><a href="index.html">jQuery (animated)</a></li>
+                    <li><a href="css.html">CSS (fixed)</a></li>
+                    <li><a href="reveal.html">CSS (reveal)</a></li>
+                </ul>
+                
 </div>
 
 <div class="gray wide">
     <div class="row">
         <div class="large-12 columns">
-            <img src="img/10000visitor.png" alt="" style="width: 100%;">
+            <a href="https://www.dominos.com/en/">
+            <img src="img/10000visitor.png" style="width: 100%;">
+            </a>
         </div>
     </div>
     <div class="row">
@@ -47,13 +83,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="large-8 medium-8 small-12 columns">
+        <div class="large-7 medium-7 small-12 columns">
             <p>Some nice soothing filler content.  you'll notice this is different because it's not just random keyboard mashing.  interesting.  I don't know if I'll actually even have this much real content to put here.  It'll look a little dumb if I don't, but not as dumb as if I leave this text.</p>
 
             </object>
             <a href="https://www.dominos.com/en/"  class="button radius">Donate Pizza</a>
         </div>
-        <div class="large-4 medium-4 small-12 columns">
+        <div class="large-5 medium-5 small-12 columns">
             <img src="img/secret.png" style="width: 100%;">
         </div>
         </div>
@@ -69,6 +105,8 @@
     </div>
     </div>
 </div>
+
+
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
