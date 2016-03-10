@@ -10,44 +10,9 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<style type="text/css">
-    #sidebar ul { background: #eee; padding: 10px; }
-    li { margin: 0 0 0 20px; }
-    #sidebar { width: 190px; float: right; }
-    
-    </style>
-
-
-    <script type="text/javascript">
-        $(function() {
-        var offset = $("#sidebar").offset();
-        var topPadding = 15;
-        $(window).scroll(function() {
-        if ($(window).scrollTop() > offset.top) {
-        $("#sidebar").stop().animate({
-        marginTop: $(window).scrollTop() - offset.top + topPadding
-        });
-        } else {
-        $("#sidebar").stop().animate({
-        marginTop: 0
-        });
-        };
-        });
-        });
-    </script>
 
   </head>
   <body>
-
-<div id="sidebar">
-				
-                <ul>
-                    <li><a href="index.html">jQuery (animated)</a></li>
-                    <li><a href="css.html">CSS (fixed)</a></li>
-                    <li><a href="reveal.html">CSS (reveal)</a></li>
-                </ul>
-                
-</div>
 
 <div class="gray wide">
     <div class="row">
