@@ -1,0 +1,17 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "An extention to help in your daily tasks",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA586LMw0fFvKpinjTUjxO4qf5P4ff77uBEKcbDnSavfAdMLFsb4nMNn29G+yp1zoDq58lK91dyEEdXgR691YOEvaxFPxlNHKuNfVa3FSCoFbP7z7yqtWm+YwqyR5j7KvNbwbMNUTZNzlMOak0aTeJP/ILsG3tjssqtkv074snE71m/l7HKWGvGFqgYUiHsNzCPwqgdP7Nq6eETyCpndN9ncWFglNawFHlbXS8yEGt5MzT6VpLTMh1J/i2xEH95bGh83Ubx58ZYs4wBUcVY4w+B/HoRTD7+A+/jY+ofL1D1xOMK6DkZaqqYp9aBAk5l7TDzMQjgH8fmARFjltZVx36IwIDAQAB",
+   "manifest_version": 2,
+   "name": "Google extension",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}
