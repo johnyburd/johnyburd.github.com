@@ -15,17 +15,17 @@ var text='';
 var $ = jQuery.noConflict();
 //var getPic() = 'http://buypizzafor.us/img/beforeAfter.png';
 function getWidePic(){      
-    var which_pic = Math.round(Math.random()*3);
+    var which_pic = Math.round(Math.random()*10);
     console.log(which_pic);
-    if (which_pic == 0)
+    if (which_pic < 3.33)
         return 'http://buypizzafor.us/img/secret.png';
-    else if (which_pic == 1)
+    else if (which_pic >=3.33 && which_pic < 6.66)
         return 'http://buypizzafor.us/img/inmyclassroom.png';
     return 'http://buypizzafor.us/img/10000visitor.png';
 }
 function getTallPic(){
-    var which_pic = Math.round(Math.random()*2)
-    if (which_pic == 0)
+    var which_pic = Math.round(Math.random()*10)
+    if (which_pic < 5)
         return 'http://buypizzafor.us/img/hotpizza.gif';
     return 'http://buypizzafor.us/img/beforeAfter.png';
 }
